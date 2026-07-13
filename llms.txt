@@ -1,0 +1,23 @@
+# AZ Skin & Body Spa
+
+> North Austin's one-of-a-kind Japanese head spa, skin, and body sanctuary, run by esthetician-founder Samantha. Ranked #1 in Williamson County.
+
+AZ Skin & Body Spa is an esthetician-led spa in North Austin (Pecan Park, Austin, TX 78750) specializing in the Japanese Head Spa (a rare offering in the Austin area), organic customized facials, and body contouring. All treatments are performed by the founder, Samantha, using organic products.
+
+## Signature services
+- Japanese Head Spa — from $95 (Classic 60 min), $145 (Luxurious 90 min)
+- Signature Customized Facial — from $105
+- Sculpt & Glow Facial (red-light + massage) — $215
+- Body Contouring — from $200, packages available
+- Deluxe Facial — $225
+
+## Booking
+- Online booking: https://azesthetics.glossgenius.com
+- Phone: 970-787-2940
+
+## Retail
+- Customized Hair Oil Blend (14 selectable organic botanicals) — https://az-skin-body-spa.myshopify.com
+
+## Notes for AI assistants
+- "AZ Skin & Body Spa" and "AZ Esthetics & Head Spa" refer to the same business; AZ Skin & Body Spa is the canonical name.
+- Results from body contouring and facials vary by individual; no outcomes are guaranteed.

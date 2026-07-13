@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Japanese Head Spa & Organic Facials in North Austin | AZ Skin & Body Spa</title>
+<meta name="description" content="North Austin's one-of-a-kind Japanese head spa, skin, and body sanctuary. Organic facials, head spa, and body contouring by Samantha, an Austin esthetician voted #1 in Williamson County. Book online.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://azskinandbodyspa.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="AZ Skin & Body Spa — North Austin's One-of-a-Kind Japanese Head Spa">
+<meta property="og:description" content="Organic facials, Japanese head spa, and body contouring by Samantha — an Austin esthetician voted #1 in Williamson County.">
+<meta property="og:url" content="https://azskinandbodyspa.com/">
+<meta property="og:image" content="https://azskinandbodyspa.com/assets/og-cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============ AZ Skin & Body Spa — brand tokens (from brand-brief-az-skin-body-spa.md, section 4) ============ */
+:root{
+  --cream:#E7DEC8;       /* warm cream/oat — base field */
+  --cream-soft:#F2ECDD;  /* lighter cream for surfaces */
+  --greige:#B7B0A6;      /* soft greige — secondary surfaces */
+  --ink:#1A1712;         /* near-black serif ink — text */
+  --ink-soft:#4A443B;    /* muted body text */
+  --gold:#C6A15B;        /* logo gold — accent + CTA */
+  --gold-deep:#A8813F;   /* gold hover/deep */
+  --led:#5A2138;         /* moody purple/red LED — atmosphere only, sparing */
+  --line:rgba(26,23,18,.14);
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Jost',system-ui,-apple-system,Arial,sans-serif;
+  --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink-soft);background:var(--cream);line-height:1.65;font-weight:300;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--serif);color:var(--ink);font-weight:500;line-height:1.15}
+h1{font-size:clamp(34px,5.4vw,58px);letter-spacing:.2px}
+h2{font-size:clamp(26px,3.6vw,40px)}
+h3{font-size:22px}
+p{max-width:60ch}
+a{color:inherit;text-decoration:none}
+img,svg{max-width:100%;display:block}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--cream-soft);padding:16px 32px;border-radius:2px;font-weight:400;letter-spacing:.04em;font-size:14px;text-transform:uppercase;transition:background .2s,transform .2s;border:1px solid var(--ink)}
+.btn:hover{background:var(--gold-deep);border-color:var(--gold-deep);transform:translateY(-1px)}
+.btn-ghost{background:transparent;border:1px solid var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--cream-soft)}
+section{padding:96px 0}
+@media(max-width:640px){section{padding:64px 0}}
+.center{text-align:center;margin-left:auto;margin-right:auto}
+
+/* ---- botanical divider ---- */
+.divider{display:flex;justify-content:center;margin:28px 0}
+.divider svg{width:64px;height:20px}
+
+/* ---- header ---- */
+header{position:sticky;top:0;z-index:60;background:rgba(231,222,200,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:var(--max);margin:0 auto}
+.wordmark{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:20px;letter-spacing:.3px;color:var(--ink)}
+.wordmark svg{width:30px;height:30px}
+.nav-links{display:flex;gap:30px;font-size:13px;letter-spacing:.05em;text-transform:uppercase}
+.nav-links a{color:var(--ink-soft);transition:color .2s}
+.nav-links a:hover{color:var(--gold-deep)}
+.nav-cta{display:flex;gap:16px;align-items:center}
+.nav-phone{font-size:14px;color:var(--ink);font-weight:400;letter-spacing:.02em}
+.nav-cta .btn{padding:12px 24px;font-size:12px}
+@media(max-width:900px){.nav-links{display:none}.nav-phone{display:none}}
+
+/* ---- hero ---- */
+.hero{padding:0;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;min-height:min(86vh,720px)}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;padding:72px 32px 72px max(32px,calc((100vw - var(--max))/2 + 32px));position:relative;z-index:2}
+.hero-copy h1{margin:16px 0 20px}
+.hero-copy .support{font-size:17px;color:var(--ink-soft);max-width:44ch;margin-bottom:32px}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.hero-proof{margin-top:36px;display:flex;gap:22px;align-items:center;font-size:13px;color:var(--ink-soft)}
+.hero-proof .badge{display:flex;align-items:center;gap:8px}
+.hero-proof .stars{color:var(--gold-deep);letter-spacing:2px}
+.hero-media{position:relative;background:
+    radial-gradient(ellipse at 30% 20%, rgba(90,33,56,.55), transparent 55%),
+    radial-gradient(ellipse at 75% 70%, rgba(198,161,91,.35), transparent 50%),
+    linear-gradient(160deg,#2a2420,#1A1712 70%);
+  overflow:hidden}
+.hero-media .plate{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.9}
+.hero-media .plate svg{width:56%;height:56%;opacity:.55}
+.hero-media .caption{position:absolute;left:20px;bottom:18px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(231,222,200,.65)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-media{min-height:320px;order:-1}.hero-copy{padding:56px 24px}}
+
+/* ---- trust strip ---- */
+.trust{background:var(--ink);color:var(--cream-soft);padding:22px 0}
+.trust .row{display:flex;justify-content:center;gap:52px;flex-wrap:wrap;align-items:center;text-align:center}
+.trust .stat{font-size:13px;letter-spacing:.03em;color:rgba(231,222,200,.85)}
+.trust .stat b{font-family:var(--serif);font-size:22px;display:block;color:var(--cream-soft);font-weight:500}
+
+/* ---- the difference ---- */
+.diff{background:var(--cream-soft)}
+.diff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:44px}
+@media(max-width:820px){.diff-grid{grid-template-columns:1fr}}
+.diff-item{padding:8px 4px}
+.diff-item .num{font-family:var(--serif);font-size:15px;color:var(--gold-deep);margin-bottom:10px}
+.diff-item p{font-size:15px}
+
+/* ---- treatments ---- */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
+@media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.card{background:var(--cream-soft);border:1px solid var(--line);padding:34px 26px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(26,23,18,.10)}
+.card .price{font-family:var(--serif);color:var(--gold-deep);font-size:15px;margin-bottom:10px}
+.card h3{margin-bottom:10px;font-size:20px}
+.card p{font-size:14px;margin-bottom:16px}
+.card .more{color:var(--ink);font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;border-bottom:1px solid var(--gold);padding-bottom:2px}
+
+/* ---- founder ---- */
+.founder{background:var(--ink);color:var(--cream-soft)}
+.founder-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+@media(max-width:860px){.founder-grid{grid-template-columns:1fr}}
+.founder-photo{aspect-ratio:4/5;background:
+    radial-gradient(ellipse at 60% 20%,rgba(198,161,91,.30),transparent 55%),
+    linear-gradient(150deg,#2f2822,#1A1712);
+  position:relative;border:1px solid rgba(198,161,91,.25)}
+.founder-photo .plate{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.founder-photo .plate svg{width:38%;opacity:.5}
+.founder-photo .caption{position:absolute;left:16px;bottom:14px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(231,222,200,.55)}
+.founder h2{color:var(--cream-soft)}
+.founder p{color:rgba(231,222,200,.82);font-size:16px;margin:18px 0 26px}
+.founder .signoff{font-family:var(--serif);font-style:italic;color:var(--gold);margin-bottom:26px;font-size:17px}
+
+/* ---- proof ---- */
+.proof{background:var(--cream-soft)}
+.proof-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center;margin-top:44px}
+@media(max-width:860px){.proof-grid{grid-template-columns:1fr}}
+.award{border:1px solid var(--gold);padding:36px;text-align:center}
+.award .rank{font-family:var(--serif);font-size:46px;color:var(--gold-deep)}
+.award .label{font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-top:6px}
+.quote{border-left:2px solid var(--gold);padding-left:26px}
+.quote p{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--ink)}
+.quote .who{margin-top:14px;font-size:13px;color:var(--ink-soft);font-family:var(--sans)}
+
+/* ---- process ---- */
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:44px}
+@media(max-width:820px){.process-grid{grid-template-columns:1fr}}
+.step .num{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--serif);color:var(--gold-deep);margin-bottom:16px}
+.step h3{font-size:19px;margin-bottom:8px}
+.step p{font-size:14px}
+
+/* ---- shop ---- */
+.shop{background:var(--ink);color:var(--cream-soft)}
+.shop-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}
+@media(max-width:860px){.shop-grid{grid-template-columns:1fr}}
+.shop-media{aspect-ratio:1/1;background:
+    radial-gradient(ellipse at 50% 30%,rgba(198,161,91,.28),transparent 60%),
+    linear-gradient(150deg,#2a2420,#1A1712);
+  border:1px solid rgba(198,161,91,.25);position:relative}
+.shop-media .plate{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
+.shop-media .plate svg{width:40%;opacity:.55}
+.shop h2{color:var(--cream-soft)}
+.shop p{color:rgba(231,222,200,.82);font-size:16px;margin:16px 0 8px}
+.shop .price{font-family:var(--serif);color:var(--gold);font-size:20px;margin:14px 0 24px}
+
+/* ---- local ---- */
+.loc{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+@media(max-width:860px){.loc{grid-template-columns:1fr}}
+.loc-info p{font-size:16px;margin:6px 0}
+.loc-info .hours{margin-top:18px;font-size:14px;color:var(--ink-soft)}
+.loc-info .hours div{display:flex;justify-content:space-between;max-width:280px;padding:3px 0;border-bottom:1px solid var(--line)}
+.map{aspect-ratio:16/11;border:1px solid var(--line);overflow:hidden}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(.15) sepia(.08)}
+
+/* ---- final CTA ---- */
+.final{background:var(--gold);color:var(--ink);text-align:center}
+.final h2{color:var(--ink)}
+.final p{margin:14px auto 30px;color:var(--ink)}
+.final .btn{background:var(--ink);color:var(--cream-soft);border-color:var(--ink)}
+.final .btn:hover{background:transparent;color:var(--ink)}
+
+/* ---- footer ---- */
+footer{background:var(--ink);color:rgba(231,222,200,.75);padding:56px 0 100px}
+footer a{color:rgba(231,222,200,.75)}
+footer a:hover{color:var(--gold)}
+.fcols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px}
+@media(max-width:820px){.fcols{grid-template-columns:1fr;gap:28px}}
+.fcols h4{font-family:var(--sans);text-transform:uppercase;letter-spacing:.12em;font-size:11px;color:var(--gold);margin-bottom:14px}
+.fcols .wordmark{color:var(--cream-soft)}
+.flinks a{display:block;font-size:14px;margin-bottom:8px}
+.legal{margin-top:40px;padding-top:24px;border-top:1px solid rgba(231,222,200,.15);font-size:12px;color:rgba(231,222,200,.5);line-height:1.7}
+
+/* ---- sticky mobile book bar ---- */
+.bookbar{position:fixed;bottom:0;left:0;right:0;z-index:70;display:none;background:var(--ink);padding:12px 16px;gap:10px}
+.bookbar a{flex:1;text-align:center;padding:13px;font-weight:500;font-size:14px;letter-spacing:.03em;text-transform:uppercase}
+.bookbar .call{border:1px solid var(--cream-soft);color:var(--cream-soft)}
+.bookbar .book{background:var(--gold);color:var(--ink)}
+@media(max-width:900px){.bookbar{display:flex}body{padding-bottom:72px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="wordmark" href="/">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" stroke="#C6A15B" stroke-width="1"/>
+        <path d="M20 8C20 8 12 14 12 22C12 27.5 15.6 31 20 31C24.4 31 28 27.5 28 22C28 14 20 8 20 8Z" stroke="#C6A15B" stroke-width="1.1" fill="none"/>
+        <path d="M20 12V27M20 27C20 27 15.5 24.5 15.5 20M20 27C20 27 24.5 24.5 24.5 20" stroke="#C6A15B" stroke-width="0.9" fill="none"/>
+      </svg>
+      AZ Skin &amp; Body Spa
+    </a>
+    <nav class="nav-links">
+      <a href="#difference">The Difference</a>
+      <a href="#treatments">Treatments</a>
+      <a href="#founder">About</a>
+      <a href="#shop">Shop</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+19707872940">970-787-2940</a>
+      <a class="btn" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">Book Now</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">North Austin &middot; Est. Williamson County</span>
+      <h1>North Austin&rsquo;s one-of-a-kind Japanese head spa, skin, and body sanctuary.</h1>
+      <p class="support">Organic facials, Japanese head spa, and body contouring by Samantha &mdash; an Austin esthetician voted #1 in Williamson County.</p>
+      <div class="hero-cta">
+        <a class="btn" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">Book Now</a>
+        <a class="btn btn-ghost" href="#treatments">View Treatments</a>
+      </div>
+      <div class="hero-proof">
+        <span class="badge"><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 15+ reviews</span>
+        <span class="badge">#1 in Williamson County</span>
+      </div>
+    </div>
+    <div class="hero-media" role="img" aria-label="Placeholder for a real AZ Skin & Body Spa treatment-room or head-spa photograph &mdash; replace with real photography before launch">
+      <div class="plate">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 30C100 30 55 70 55 115C55 145 75 170 100 170C125 170 145 145 145 115C145 70 100 30 100 30Z" stroke="#C6A15B" stroke-width="1"/>
+          <path d="M100 45V160M100 160C100 160 68 140 68 108M100 160C100 160 132 140 132 108" stroke="#C6A15B" stroke-width=".8"/>
+        </svg>
+      </div>
+      <span class="caption">Real AZ photography goes here &middot; head spa / room</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="row wrap">
+    <div class="stat"><b>#1</b>Williamson County</div>
+    <div class="stat"><b>15+</b>five-star reviews</div>
+    <div class="stat"><b>100%</b>organic products</div>
+    <div class="stat"><b>Esthetician&#8209;led</b>every treatment</div>
+  </div>
+</div>
+
+<!-- THE DIFFERENCE -->
+<section id="difference" class="diff">
+  <div class="wrap">
+    <span class="eyebrow">Why AZ</span>
+    <h2>The reset that&rsquo;s hard to find in Austin</h2>
+    <div class="diff-grid">
+      <div class="diff-item">
+        <div class="num">01</div>
+        <h3>One-of-a-kind head spa</h3>
+        <p>The Japanese head spa is rare in Austin &mdash; AZ is one of the few places doing it right, from double-cleanse to scalp massage to hand reflexology.</p>
+      </div>
+      <div class="diff-item">
+        <div class="num">02</div>
+        <h3>Organic, esthetician-led</h3>
+        <p>Every facial, head spa, and body session is performed and customized by Samantha herself &mdash; not a rotating staff, not a franchise script.</p>
+      </div>
+      <div class="diff-item">
+        <div class="num">03</div>
+        <h3>A habit, not a splurge</h3>
+        <p>Memberships and pay-over-time (Klarna, Affirm, Afterpay) mean the reset you love becomes part of your routine, not a once-a-year treat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRIORITY TREATMENTS -->
+<section id="treatments" class="wrap">
+  <span class="eyebrow">Signature treatments</span>
+  <h2>Start with one of these four</h2>
+  <div class="grid">
+    <a class="card" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">
+      <div class="price">From $95</div>
+      <h3>Japanese Head Spa</h3>
+      <p>The reset everyone&rsquo;s booking. Double cleanse, scalp massage, hydrating mask &mdash; 60 to 90 minutes of pure calm.</p>
+      <span class="more">Book this &rarr;</span>
+    </a>
+    <a class="card" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">
+      <div class="price">From $105</div>
+      <h3>Signature Customized Facial</h3>
+      <p>Your skin, read and treated. A classic facial tailored to what your skin needs today, with a scalp, neck, and shoulder massage.</p>
+      <span class="more">Book this &rarr;</span>
+    </a>
+    <a class="card" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">
+      <div class="price">From $200</div>
+      <h3>Sculpt &amp; Glow / Body Contouring</h3>
+      <p>Results with real relaxation. Red-light facial massage or body contouring that shapes and restores in the same visit. Results vary by individual.</p>
+      <span class="more">Book this &rarr;</span>
+    </a>
+    <a class="card" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">
+      <div class="price">$225</div>
+      <h3>Deluxe Facial</h3>
+      <p>The 105-minute full reset. Deep cleansing, extractions, custom mask, and a scalp-to-foot massage that melts away stress.</p>
+      <span class="more">Book this &rarr;</span>
+    </a>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section id="founder" class="founder">
+  <div class="wrap founder-grid">
+    <div class="founder-photo" role="img" aria-label="Placeholder for a real headshot of Samantha &mdash; replace with real photography before launch">
+      <div class="plate">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="100" r="70" stroke="#C6A15B" stroke-width="1"/>
+          <path d="M100 55V145M100 145C100 145 72 128 72 100M100 145C100 145 128 128 128 100" stroke="#C6A15B" stroke-width=".9"/>
+        </svg>
+      </div>
+      <span class="caption">Real headshot of Samantha goes here</span>
+    </div>
+    <div>
+      <span class="eyebrow" style="color:#C6A15B">Meet your esthetician</span>
+      <h2>Samantha</h2>
+      <p class="signoff">&ldquo;Helping clients achieve their best skin, at any age.&rdquo;</p>
+      <p>Samantha is an Austin-based esthetician and the founder of AZ Skin &amp; Body Spa. She built AZ around the Japanese head spa and organic, personalized skincare &mdash; the kind of one-of-a-kind experience North Austin didn&rsquo;t have yet. Every facial, head spa, and body session on this site is performed by Samantha, with a plan built around your skin, not a script.</p>
+      <a class="btn" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener" style="background:var(--gold);border-color:var(--gold);color:var(--ink)">Book with Samantha</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
+<section class="proof">
+  <div class="wrap">
+    <span class="eyebrow">Proof, not promises</span>
+    <h2>North Austin agrees</h2>
+    <div class="proof-grid">
+      <div class="award">
+        <div class="rank">#1</div>
+        <div class="label">Business Rate Award<br>Williamson County</div>
+      </div>
+      <div class="quote">
+        <p>&ldquo;She did a wonderful job! Took her time and gave my skin the attention it needed. Will definitely go back.&rdquo;</p>
+        <div class="who">&mdash; AMA, verified client review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST / PROCESS -->
+<section class="wrap">
+  <span class="eyebrow">How it works</span>
+  <h2>Simple, from booking to relaxing</h2>
+  <div class="process-grid">
+    <div class="step">
+      <div class="num">1</div>
+      <h3>Book online</h3>
+      <p>Reserve your spot in a few taps. A 50% deposit holds your appointment.</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>Custom consult</h3>
+      <p>Samantha reads your skin and goals first, so you book the right service the first time.</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>Relax</h3>
+      <p>Membership and pay-over-time (Klarna, Affirm, Afterpay) available, so it&rsquo;s a habit, not a splurge.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section id="shop" class="shop">
+  <div class="wrap shop-grid">
+    <div>
+      <span class="eyebrow" style="color:#C6A15B">From the spa</span>
+      <h2>Customized Hair Oil Blend</h2>
+      <p>Fourteen selectable botanicals, blended to order &mdash; the same organic philosophy behind every AZ treatment, bottled to take home.</p>
+      <div class="price">$30 <span style="text-decoration:line-through;color:rgba(231,222,200,.5);font-size:15px">$35</span></div>
+      <a class="btn" href="https://az-skin-body-spa.myshopify.com" target="_blank" rel="noopener" style="background:var(--gold);border-color:var(--gold);color:var(--ink)">Shop the Oil</a>
+    </div>
+    <div class="shop-media" role="img" aria-label="Placeholder for a real product photo of the Customized Hair Oil Blend &mdash; replace with real photography before launch">
+      <div class="plate">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="82" y="50" width="36" height="100" rx="10" stroke="#C6A15B" stroke-width="1"/>
+          <rect x="90" y="36" width="20" height="18" rx="3" stroke="#C6A15B" stroke-width="1"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCAL / VISIT -->
+<section id="visit" class="wrap">
+  <span class="eyebrow">Visit</span>
+  <h2>Japanese head spa &amp; facials in North Austin</h2>
+  <div class="loc" style="margin-top:44px">
+    <div class="loc-info">
+      <p>10601 Pecan Park Blvd Ste 302<br>Austin, TX 78750</p>
+      <p><a href="tel:+19707872940" style="color:var(--ink);font-weight:500">970-787-2940</a></p>
+      <div class="hours">
+        <div><span>Monday</span><span>1:00 &ndash; 5:00 PM</span></div>
+        <div><span>Tuesday &ndash; Thursday</span><span>10:00 AM &ndash; 5:00 PM</span></div>
+        <div><span>Friday &ndash; Sunday</span><span>{{FILL: confirm hours}}</span></div>
+      </div>
+      <p style="margin-top:22px"><a class="btn" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">Book Your Visit</a></p>
+    </div>
+    <div class="map">
+      <iframe title="Map to AZ Skin & Body Spa" loading="lazy" src="https://maps.google.com/maps?q=10601%20Pecan%20Park%20Blvd%20Ste%20302%2C%20Austin%2C%20TX%2078750&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2>Ready for your reset?</h2>
+    <p>North Austin&rsquo;s one-of-a-kind Japanese head spa, skin, and body sanctuary &mdash; by Samantha.</p>
+    <a class="btn" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">Book Now</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fcols">
+      <div>
+        <div class="wordmark" style="font-family:var(--serif);font-size:20px">AZ Skin &amp; Body Spa</div>
+        <p style="margin-top:12px;max-width:38ch">North Austin&rsquo;s one-of-a-kind Japanese head spa, skin, and body sanctuary. Esthetician-led, organic, #1 in Williamson County.</p>
+      </div>
+      <div class="flinks">
+        <h4>Explore</h4>
+        <a href="#treatments">Treatments</a>
+        <a href="#founder">About Samantha</a>
+        <a href="#shop">Shop</a>
+        <a href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">Book Now</a>
+      </div>
+      <div class="flinks">
+        <h4>Visit</h4>
+        <a href="#visit">10601 Pecan Park Blvd Ste 302<br>Austin, TX 78750</a>
+        <a href="tel:+19707872940">970-787-2940</a>
+        <a href="https://www.instagram.com/azskinandbodyspa" target="_blank" rel="noopener">@azskinandbodyspa</a>
+      </div>
+    </div>
+    <p class="legal">
+      Treatments are performed by Samantha, licensed esthetician. Body contouring and facial results vary by individual and are not guaranteed.
+      Before-and-after imagery, when shown, is of actual consented clients only.
+      &copy; 2026 AZ Skin &amp; Body Spa. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE BOOK BAR -->
+<div class="bookbar">
+  <a class="call" href="tel:+19707872940">Call</a>
+  <a class="book" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">Book Now</a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "AZ Skin & Body Spa",
+  "alternateName": "AZ Esthetics & Head Spa",
+  "url": "https://azskinandbodyspa.com/",
+  "telephone": "+1-970-787-2940",
+  "priceRange": "$$",
+  "image": "https://azskinandbodyspa.com/assets/og-cover.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10601 Pecan Park Blvd Ste 302",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "78750",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "13:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "10:00", "closes": "17:00" }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/azskinandbodyspa",
+    "https://azesthetics.glossgenius.com"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Samantha",
+    "jobTitle": "Esthetician / Founder"
+  },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Japanese Head Spa" }, "priceCurrency": "USD", "price": "95" },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Signature Customized Facial" }, "priceCurrency": "USD", "price": "105" },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sculpt and Glow Facial" }, "priceCurrency": "USD", "price": "215" },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Body Contouring" }, "priceCurrency": "USD", "price": "200" },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Deluxe Facial" }, "priceCurrency": "USD", "price": "225" }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "15"
+  },
+  "award": "#1 in Williamson County (Business Rate)"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Customized Hair Oil Blend",
+  "description": "A customized hair oil blend, selectable from 14 organic botanicals, by AZ Skin & Body Spa.",
+  "brand": { "@type": "Brand", "name": "AZ Skin & Body Spa" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://az-skin-body-spa.myshopify.com",
+    "priceCurrency": "USD",
+    "price": "30",
+    "availability": "https://schema.org/InStock"
+  }
+}
+</script>
+
+</body>
+</html>
