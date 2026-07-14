@@ -84,14 +84,9 @@ header{position:sticky;top:0;z-index:60;background:rgba(231,222,200,.92);backdro
 .hero-proof{margin-top:36px;display:flex;gap:22px;align-items:center;font-size:13px;color:var(--ink-soft)}
 .hero-proof .badge{display:flex;align-items:center;gap:8px}
 .hero-proof .stars{color:var(--gold-deep);letter-spacing:2px}
-.hero-media{position:relative;background:
-    radial-gradient(ellipse at 30% 20%, rgba(90,33,56,.55), transparent 55%),
-    radial-gradient(ellipse at 75% 70%, rgba(198,161,91,.35), transparent 50%),
-    linear-gradient(160deg,#2a2420,#1A1712 70%);
-  overflow:hidden}
-.hero-media .plate{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;opacity:.9}
-.hero-media .plate svg{width:56%;height:56%;opacity:.55}
-.hero-media .caption{position:absolute;left:20px;bottom:18px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:rgba(231,222,200,.65)}
+.hero-media{position:relative;overflow:hidden;background:#1A1712}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,23,18,0) 55%,rgba(26,23,18,.55));pointer-events:none}
 @media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-media{min-height:320px;order:-1}.hero-copy{padding:56px 24px}}
 
 /* ---- trust strip ---- */
@@ -112,8 +107,11 @@ header{position:sticky;top:0;z-index:60;background:rgba(231,222,200,.92);backdro
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
 @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.grid{grid-template-columns:1fr}}
-.card{background:var(--cream-soft);border:1px solid var(--line);padding:34px 26px;transition:transform .2s,box-shadow .2s}
+.card{background:var(--cream-soft);border:1px solid var(--line);transition:transform .2s,box-shadow .2s;overflow:hidden}
 .card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(26,23,18,.10)}
+.card .thumb{aspect-ratio:4/3;overflow:hidden;background:var(--greige)}
+.card .thumb img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:26px 24px}
 .card .price{font-family:var(--serif);color:var(--gold-deep);font-size:15px;margin-bottom:10px}
 .card h3{margin-bottom:10px;font-size:20px}
 .card p{font-size:14px;margin-bottom:16px}
@@ -123,13 +121,8 @@ header{position:sticky;top:0;z-index:60;background:rgba(231,222,200,.92);backdro
 .founder{background:var(--ink);color:var(--cream-soft)}
 .founder-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
 @media(max-width:860px){.founder-grid{grid-template-columns:1fr}}
-.founder-photo{aspect-ratio:4/5;background:
-    radial-gradient(ellipse at 60% 20%,rgba(198,161,91,.30),transparent 55%),
-    linear-gradient(150deg,#2f2822,#1A1712);
-  position:relative;border:1px solid rgba(198,161,91,.25)}
-.founder-photo .plate{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.founder-photo .plate svg{width:38%;opacity:.5}
-.founder-photo .caption{position:absolute;left:16px;bottom:14px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(231,222,200,.55)}
+.founder-photo{aspect-ratio:4/5;position:relative;border:1px solid rgba(198,161,91,.25);overflow:hidden;background:#1A1712}
+.founder-photo img{width:100%;height:100%;object-fit:cover;object-position:top center}
 .founder h2{color:var(--cream-soft)}
 .founder p{color:rgba(231,222,200,.82);font-size:16px;margin:18px 0 26px}
 .founder .signoff{font-family:var(--serif);font-style:italic;color:var(--gold);margin-bottom:26px;font-size:17px}
@@ -156,12 +149,8 @@ header{position:sticky;top:0;z-index:60;background:rgba(231,222,200,.92);backdro
 .shop{background:var(--ink);color:var(--cream-soft)}
 .shop-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}
 @media(max-width:860px){.shop-grid{grid-template-columns:1fr}}
-.shop-media{aspect-ratio:1/1;background:
-    radial-gradient(ellipse at 50% 30%,rgba(198,161,91,.28),transparent 60%),
-    linear-gradient(150deg,#2a2420,#1A1712);
-  border:1px solid rgba(198,161,91,.25);position:relative}
-.shop-media .plate{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.shop-media .plate svg{width:40%;opacity:.55}
+.shop-media{aspect-ratio:1/1;border:1px solid rgba(198,161,91,.25);position:relative;overflow:hidden;background:#1A1712}
+.shop-media img{width:100%;height:100%;object-fit:cover}
 .shop h2{color:var(--cream-soft)}
 .shop p{color:rgba(231,222,200,.82);font-size:16px;margin:16px 0 8px}
 .shop .price{font-family:var(--serif);color:var(--gold);font-size:20px;margin:14px 0 24px}
@@ -243,14 +232,8 @@ footer a:hover{color:var(--gold)}
         <span class="badge">#1 in Williamson County</span>
       </div>
     </div>
-    <div class="hero-media" role="img" aria-label="Placeholder for a real AZ Skin & Body Spa treatment-room or head-spa photograph &mdash; replace with real photography before launch">
-      <div class="plate">
-        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M100 30C100 30 55 70 55 115C55 145 75 170 100 170C125 170 145 145 145 115C145 70 100 30 100 30Z" stroke="#C6A15B" stroke-width="1"/>
-          <path d="M100 45V160M100 160C100 160 68 140 68 108M100 160C100 160 132 140 132 108" stroke="#C6A15B" stroke-width=".8"/>
-        </svg>
-      </div>
-      <span class="caption">Real AZ photography goes here &middot; head spa / room</span>
+    <div class="hero-media">
+      <img src="assets/images/hero-redlight.jpeg" alt="Red light therapy treatment at AZ Skin & Body Spa in Austin, TX" loading="eager">
     </div>
   </div>
 </section>
@@ -296,28 +279,40 @@ footer a:hover{color:var(--gold)}
   <h2>Start with one of these four</h2>
   <div class="grid">
     <a class="card" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">
-      <div class="price">From $95</div>
-      <h3>Japanese Head Spa</h3>
-      <p>The reset everyone&rsquo;s booking. Double cleanse, scalp massage, hydrating mask &mdash; 60 to 90 minutes of pure calm.</p>
-      <span class="more">Book this &rarr;</span>
+      <div class="thumb"><img src="assets/images/treatment-headspa.jpg" alt="Classic Japanese Head Spa at AZ Skin & Body Spa in Austin, TX" loading="lazy"></div>
+      <div class="body">
+        <div class="price">From $95</div>
+        <h3>Japanese Head Spa</h3>
+        <p>The reset everyone&rsquo;s booking. Double cleanse, scalp massage, hydrating mask &mdash; 60 to 90 minutes of pure calm.</p>
+        <span class="more">Book this &rarr;</span>
+      </div>
     </a>
     <a class="card" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">
-      <div class="price">From $105</div>
-      <h3>Signature Customized Facial</h3>
-      <p>Your skin, read and treated. A classic facial tailored to what your skin needs today, with a scalp, neck, and shoulder massage.</p>
-      <span class="more">Book this &rarr;</span>
+      <div class="thumb"><img src="assets/images/treatment-facial.jpg" alt="Signature Customized Facial at AZ Skin & Body Spa in Austin, TX" loading="lazy"></div>
+      <div class="body">
+        <div class="price">From $105</div>
+        <h3>Signature Customized Facial</h3>
+        <p>Your skin, read and treated. A classic facial tailored to what your skin needs today, with a scalp, neck, and shoulder massage.</p>
+        <span class="more">Book this &rarr;</span>
+      </div>
     </a>
     <a class="card" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">
-      <div class="price">From $200</div>
-      <h3>Sculpt &amp; Glow / Body Contouring</h3>
-      <p>Results with real relaxation. Red-light facial massage or body contouring that shapes and restores in the same visit. Results vary by individual.</p>
-      <span class="more">Book this &rarr;</span>
+      <div class="thumb"><img src="assets/images/treatment-sculptglow.jpg" alt="Sculpt and Glow facial at AZ Skin & Body Spa in Austin, TX" loading="lazy"></div>
+      <div class="body">
+        <div class="price">From $200</div>
+        <h3>Sculpt &amp; Glow / Body Contouring</h3>
+        <p>Results with real relaxation. Red-light facial massage or body contouring that shapes and restores in the same visit. Results vary by individual.</p>
+        <span class="more">Book this &rarr;</span>
+      </div>
     </a>
     <a class="card" href="https://azesthetics.glossgenius.com" target="_blank" rel="noopener">
-      <div class="price">$225</div>
-      <h3>Deluxe Facial</h3>
-      <p>The 105-minute full reset. Deep cleansing, extractions, custom mask, and a scalp-to-foot massage that melts away stress.</p>
-      <span class="more">Book this &rarr;</span>
+      <div class="thumb"><img src="assets/images/treatment-deluxe.jpg" alt="Deluxe Facial at AZ Skin & Body Spa in Austin, TX" loading="lazy"></div>
+      <div class="body">
+        <div class="price">$225</div>
+        <h3>Deluxe Facial</h3>
+        <p>The 105-minute full reset. Deep cleansing, extractions, custom mask, and a scalp-to-foot massage that melts away stress.</p>
+        <span class="more">Book this &rarr;</span>
+      </div>
     </a>
   </div>
 </section>
@@ -325,14 +320,8 @@ footer a:hover{color:var(--gold)}
 <!-- FOUNDER -->
 <section id="founder" class="founder">
   <div class="wrap founder-grid">
-    <div class="founder-photo" role="img" aria-label="Placeholder for a real headshot of Samantha &mdash; replace with real photography before launch">
-      <div class="plate">
-        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="100" cy="100" r="70" stroke="#C6A15B" stroke-width="1"/>
-          <path d="M100 55V145M100 145C100 145 72 128 72 100M100 145C100 145 128 128 128 100" stroke="#C6A15B" stroke-width=".9"/>
-        </svg>
-      </div>
-      <span class="caption">Real headshot of Samantha goes here</span>
+    <div class="founder-photo">
+      <img src="assets/images/founder-samantha.jpg" alt="Samantha, founder and esthetician at AZ Skin & Body Spa, Austin, TX" loading="lazy">
     </div>
     <div>
       <span class="eyebrow" style="color:#C6A15B">Meet your esthetician</span>
@@ -395,13 +384,8 @@ footer a:hover{color:var(--gold)}
       <div class="price">$30 <span style="text-decoration:line-through;color:rgba(231,222,200,.5);font-size:15px">$35</span></div>
       <a class="btn" href="https://az-skin-body-spa.myshopify.com" target="_blank" rel="noopener" style="background:var(--gold);border-color:var(--gold);color:var(--ink)">Shop the Oil</a>
     </div>
-    <div class="shop-media" role="img" aria-label="Placeholder for a real product photo of the Customized Hair Oil Blend &mdash; replace with real photography before launch">
-      <div class="plate">
-        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="82" y="50" width="36" height="100" rx="10" stroke="#C6A15B" stroke-width="1"/>
-          <rect x="90" y="36" width="20" height="18" rx="3" stroke="#C6A15B" stroke-width="1"/>
-        </svg>
-      </div>
+    <div class="shop-media">
+      <img src="assets/images/product-hairoil-1.png" alt="AZ Skin & Body Spa Customized Hair Oil Blend bottle" loading="lazy">
     </div>
   </div>
 </section>
