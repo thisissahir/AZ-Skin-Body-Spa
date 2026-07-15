@@ -14,7 +14,8 @@ Pulled from AZ's own GlossGenius portfolio/service listings, Shopify store, and 
 
 | File | Used for | Source |
 |---|---|---|
-| `assets/images/hero-redlight.jpeg` | Hero | GlossGenius portfolio (red light therapy) |
+| `assets/images/hero-landing.jpeg` | Hero | Supplied directly by Sahir (red light therapy, moody close-up) — replaces the earlier GlossGenius portfolio hero pick |
+| `assets/images/hero-redlight.jpeg` | Spare/unused | GlossGenius portfolio (red light therapy) — original hero pick, kept as a fallback |
 | `assets/images/treatment-headspa.jpg` | Japanese Head Spa card | GlossGenius service photo ("Classic Japanese Head Spa 60 Mins") |
 | `assets/images/treatment-facial.jpg` | Signature Customized Facial card | GlossGenius service photo |
 | `assets/images/treatment-sculptglow.jpg` | Sculpt & Glow card | GlossGenius service photo |
